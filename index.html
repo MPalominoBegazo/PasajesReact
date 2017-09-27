@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+   <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+
+   <link rel="stylesheet" href="app.css">
+
+   <script src="app.jsx" type="text/babel">
+   </script> 
+
+   <title>Document</title>
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+          <div class="nav-collapse">
+            <h1 align="center">RESERVAR PASAJES</h1>
+          </div>
+        </div>
+      </header>
+      <section id="reserve">
+    
+        <div id=table>
+    
+        </div>
+        <div id="mostrar"></div>
+    
+        <div align="center">
+          <label for="bntDNIbusqueda">DNI: </label>
+          <input type="text" id="dniBusqueda">
+          <button id="btnBuscar" type="button" class="btn btn-danger"><i class="fa fa-search" aria-hidden="true"></i>  BUSCAR</button>
+        </div><br />
+    
+        <div align="center">
+          <div id="tablaContenido">
+            <input type="text" id="txtNombre" placeholder="Nombre" required><br />
+            <input type="text" id="txtApellido" placeholder="Apellido"><br />
+            <input type="text" id="txtDNI" placeholder="DNI" required>
+          </div><br />
+          <div id="botones">
+            <button id="btnReservar" type="button" class="btn btn-info"><i class="fa fa-suitcase" aria-hidden="true"></i>  RESERVAR</button>
+            <button id="btnCancelar" type="button" class="btn btn-info"><i class="fa fa-trash" aria-hidden="true"></i>  CANCELAR</button>
+          </div>
+        </div><br />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <div align="center">
+                <button id="btnlistar" type="button" class="btn btn-success"> <i class="fa fa-list" aria-hidden="true"></i>  LISTAR</button>
+                <div id="root"></div>
+              </div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+        </div>
+    
+      </section>
+</body>
+</html>
